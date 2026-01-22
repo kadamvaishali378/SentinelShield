@@ -1,0 +1,70 @@
+2026-01-20 16:40:03,219 | 2026-01-20 16:40:03 | IP: 127.0.0.1 | Query: /inspect?name=vaishali | Status: Normal | Category: None
+2026-01-20 16:40:03,227 | 127.0.0.1 - - [20/Jan/2026 16:40:03] "GET /inspect?name=vaishali HTTP/1.1" 200 -
+2026-01-20 16:40:12,414 | 127.0.0.1 - - [20/Jan/2026 16:40:12] "GET /summary HTTP/1.1" 200 -
+2026-01-20 16:40:17,323 | 2026-01-20 16:40:17 | IP: 127.0.0.1 | Query: /inspect?search=<script>alert(1)</script> | Status: Malicious | Category: XSS
+2026-01-20 16:40:17,326 | 127.0.0.1 - - [20/Jan/2026 16:40:17] "GET /inspect?search=<script>alert(1)</script> HTTP/1.1" 200 -
+2026-01-20 16:40:21,181 | 127.0.0.1 - - [20/Jan/2026 16:40:21] "GET /summary HTTP/1.1" 200 -
+2026-01-20 16:40:31,188 | 2026-01-20 16:40:31 | IP: 127.0.0.1 | Query: /inspect?id=1 OR 1=1 | Status: Malicious | Category: SQL Injection
+2026-01-20 16:40:31,189 | 127.0.0.1 - - [20/Jan/2026 16:40:31] "GET /inspect?id=1%20OR%201=1 HTTP/1.1" 200 -
+2026-01-20 16:40:36,496 | 2026-01-20 16:40:36 | IP: 127.0.0.1 | Query: /inspect?file=../../etc/passwd | Status: Malicious | Category: Directory Traversal
+2026-01-20 16:40:36,496 | 127.0.0.1 - - [20/Jan/2026 16:40:36] "GET /inspect?file=../../etc/passwd HTTP/1.1" 200 -
+2026-01-20 16:40:47,344 | 2026-01-20 16:40:47 | IP: 127.0.0.1 | Query: /inspect?cmd=dir | Status: Malicious | Category: Command Injection
+2026-01-20 16:40:47,345 | 127.0.0.1 - - [20/Jan/2026 16:40:47] "GET /inspect?cmd=dir HTTP/1.1" 200 -
+2026-01-20 16:40:57,260 | 2026-01-20 16:40:57 | IP: 127.0.0.1 | Query: /inspect?test=bruteforce | Status: Malicious | Category: Rate Limiting / Brute Force
+2026-01-20 16:40:57,261 | 127.0.0.1 - - [20/Jan/2026 16:40:57] "GET /inspect?test=bruteforce HTTP/1.1" 200 -
+2026-01-20 16:41:03,601 | 127.0.0.1 - - [20/Jan/2026 16:41:03] "GET /summary HTTP/1.1" 200 -
+2026-01-20 16:41:13,841 | 2026-01-20 16:41:13 | IP: 127.0.0.1 | Query: / | Status: Normal | Category: None
+2026-01-20 16:41:13,841 | 127.0.0.1 - - [20/Jan/2026 16:41:13] "GET / HTTP/1.1" 200 -
+2026-01-20 16:41:16,211 | 2026-01-20 16:41:16 | IP: 127.0.0.1 | Query: / | Status: Normal | Category: None
+2026-01-20 16:41:16,212 | 127.0.0.1 - - [20/Jan/2026 16:41:16] "GET / HTTP/1.1" 200 -
+2026-01-20 16:41:19,615 | 127.0.0.1 - - [20/Jan/2026 16:41:19] "GET /summary HTTP/1.1" 200 -
+2026-01-20 16:41:37,845 |  * Detected change in 'C:\\Users\\Vaishali\\Desktop\\SentinelShield\\sentinelshield.py', reloading
+2026-01-20 16:41:37,955 |  * Restarting with watchdog (windowsapi)
+2026-01-20 16:41:39,208 |  * Debugger is active!
+2026-01-20 16:41:39,218 |  * Debugger PIN: 232-158-204
+2026-01-20 16:44:56,202 |  * Detected change in 'C:\\Users\\Vaishali\\Desktop\\SentinelShield\\sentinelshield.py', reloading
+2026-01-20 16:44:56,319 |  * Restarting with watchdog (windowsapi)
+2026-01-20 16:44:57,601 |  * Debugger is active!
+2026-01-20 16:44:57,609 |  * Debugger PIN: 232-158-204
+2026-01-20 16:46:09,326 |  * Detected change in 'C:\\Users\\Vaishali\\Desktop\\SentinelShield\\sentinelshield.py', reloading
+2026-01-20 16:46:09,467 |  * Restarting with watchdog (windowsapi)
+2026-01-20 16:46:49,031 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-01-20 16:46:49,031 | [33mPress CTRL+C to quit[0m
+2026-01-20 16:46:49,090 |  * Restarting with watchdog (windowsapi)
+2026-01-20 16:46:50,281 |  * Debugger is active!
+2026-01-20 16:46:50,290 |  * Debugger PIN: 232-158-204
+2026-01-20 16:46:50,425 | 127.0.0.1 - - [20/Jan/2026 16:46:50] "GET /summary HTTP/1.1" 200 -
+2026-01-20 16:58:25,061 |  * Detected change in 'C:\\Users\\Vaishali\\Desktop\\SentinelShield\\sentinelshield.py', reloading
+2026-01-20 16:58:25,285 |  * Restarting with watchdog (windowsapi)
+2026-01-20 16:58:27,153 |  * Debugger is active!
+2026-01-20 16:58:27,162 |  * Debugger PIN: 232-158-204
+2026-01-20 16:58:31,959 |  * Detected change in 'C:\\Users\\Vaishali\\Desktop\\SentinelShield\\sentinelshield.py', reloading
+2026-01-20 16:58:32,157 |  * Restarting with watchdog (windowsapi)
+2026-01-20 16:58:33,247 |  * Debugger is active!
+2026-01-20 16:58:33,254 |  * Debugger PIN: 232-158-204
+2026-01-20 20:50:46,218 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-01-20 20:50:46,219 | [33mPress CTRL+C to quit[0m
+2026-01-20 20:50:46,285 |  * Restarting with watchdog (windowsapi)
+2026-01-20 20:50:47,296 |  * Debugger is active!
+2026-01-20 20:50:47,304 |  * Debugger PIN: 232-158-204
+2026-01-20 20:51:15,344 | 2026-01-20 20:51:15 | IP: 127.0.0.1 | Query: / | Status: Normal | Category: None
+2026-01-20 20:51:15,346 | 127.0.0.1 - - [20/Jan/2026 20:51:15] "GET / HTTP/1.1" 200 -
+2026-01-20 20:51:15,491 | 127.0.0.1 - - [20/Jan/2026 20:51:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-01-20 20:51:27,632 | 127.0.0.1 - - [20/Jan/2026 20:51:27] "GET /summary HTTP/1.1" 200 -
+2026-01-20 20:57:04,086 | 2026-01-20 20:57:04 | IP: 127.0.0.1 | Query: /inspect?test=bruteforce | Status: Normal | Category: None
+2026-01-20 20:57:04,087 | 127.0.0.1 - - [20/Jan/2026 20:57:04] "GET /inspect?test=bruteforce HTTP/1.1" 200 -
+2026-01-20 20:57:06,628 | 2026-01-20 20:57:06 | IP: 127.0.0.1 | Query: /inspect?test=bruteforce | Status: Normal | Category: None
+2026-01-20 20:57:06,629 | 127.0.0.1 - - [20/Jan/2026 20:57:06] "GET /inspect?test=bruteforce HTTP/1.1" 200 -
+2026-01-20 20:57:07,516 | 2026-01-20 20:57:07 | IP: 127.0.0.1 | Query: /inspect?test=bruteforce | Status: Normal | Category: None
+2026-01-20 20:57:07,516 | 127.0.0.1 - - [20/Jan/2026 20:57:07] "GET /inspect?test=bruteforce HTTP/1.1" 200 -
+2026-01-20 20:57:07,922 | 2026-01-20 20:57:07 | IP: 127.0.0.1 | Query: /inspect?test=bruteforce | Status: Normal | Category: None
+2026-01-20 20:57:07,923 | 127.0.0.1 - - [20/Jan/2026 20:57:07] "GET /inspect?test=bruteforce HTTP/1.1" 200 -
+2026-01-20 20:57:08,105 | 2026-01-20 20:57:08 | IP: 127.0.0.1 | Query: /inspect?test=bruteforce | Status: Normal | Category: None
+2026-01-20 20:57:08,105 | 127.0.0.1 - - [20/Jan/2026 20:57:08] "GET /inspect?test=bruteforce HTTP/1.1" 200 -
+2026-01-20 20:57:08,382 | 2026-01-20 20:57:08 | IP: 127.0.0.1 | Query: /inspect?test=bruteforce | Status: Malicious | Category: Rate Limiting / Brute Force
+2026-01-20 20:57:08,383 | 127.0.0.1 - - [20/Jan/2026 20:57:08] "GET /inspect?test=bruteforce HTTP/1.1" 200 -
+2026-01-20 20:57:08,599 | 2026-01-20 20:57:08 | IP: 127.0.0.1 | Query: /inspect?test=bruteforce | Status: Malicious | Category: Rate Limiting / Brute Force
+2026-01-20 20:57:08,599 | 127.0.0.1 - - [20/Jan/2026 20:57:08] "GET /inspect?test=bruteforce HTTP/1.1" 200 -
+2026-01-20 20:57:11,227 | 127.0.0.1 - - [20/Jan/2026 20:57:11] "GET /summary HTTP/1.1" 200 -
