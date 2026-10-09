@@ -1,6 +1,6 @@
 # 🛡️ SentinelShield
 
-### Advanced Intrusion Detection & Web Protection System
+### Intrusion Detection & Web Protection System
 
 ---
 
