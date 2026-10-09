@@ -246,7 +246,7 @@ SentinelShield demonstrates how intrusion detection systems monitor web traffic,
 
 ## 👩‍💻 Author
 
-**Vaishali Vasant Kadam**
+**Vaishali Kadam**
 
 
 
